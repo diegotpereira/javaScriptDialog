@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de Formulário</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <style type="text/css">
+        .msg-erro{ color: red; }
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <h1>Formulario de Cadastro</h1>
+        <form action="" method="post" id="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu Nome">
+                <span class="msg-erro msg-nome"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail">
+                <span class="msg-erro msg-email"></span>
+            </div>
+            <div class="form-group">
+                <label for="privilegio">Sexo</label>
+                <select class="form-control" name="sexo" id="sexo">
+                    <option value="">Selecione o sexo</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Masculino">Maculino</option>
+                </select>
+                <span class="msg-erro msg-sexo"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha com no minimo 6 caracteres">
+                <span class="msg-erro msg-senha"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Repita a Senha</label>
+                <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Digite sua senha cm no minimo 6 caracteres">
+                <span class="msg-erro msg-erro2"></span>
+            </div>
+            <button type="submit" class="btn btn-primary" id="botao">Salvar</button>
+        </form>
+    </div>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>
